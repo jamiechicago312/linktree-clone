@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Link Tree</title>
+    <meta name="description" content="All my important links in one place">
+    <meta name="author" content="Your Name">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Configuration -->
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div id="background-effects">
+        <canvas id="particles-canvas"></canvas>
+        <div id="gradient-overlay"></div>
+        <div id="snow-container"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Music Player (if enabled) -->
+    <div id="music-player" class="music-player hidden">
+        <button id="music-toggle" aria-label="Toggle music">
+            <span class="music-icon">🎵</span>
+        </button>
+        <audio id="background-audio" loop>
+            <source id="audio-source" src="" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="avatar-container">
+                <img id="profile-avatar" src="" alt="Profile Picture" class="avatar">
+                <div class="avatar-ring"></div>
+            </div>
+            <h1 id="profile-name" class="profile-name">Loading...</h1>
+            <p id="profile-bio" class="profile-bio">Loading...</p>
+            <p id="profile-location" class="profile-location"></p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-section">
+            <div id="links-container" class="links-container">
+                <!-- Links will be dynamically generated here -->
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="social-section">
+            <div id="social-container" class="social-container">
+                <!-- Social media icons will be dynamically generated here -->
+            </div>
+        </div>
+
+        <!-- Visitor Counter (if enabled) -->
+        <div id="visitor-counter" class="visitor-counter hidden">
+            <span class="counter-icon">👁️</span>
+            <span id="visitor-count">0</span> visitors
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div id="custom-footer" class="custom-footer-text"></div>
+            <div class="built-with">
+                Built with <span class="heart">❤️</span> using 
+                <a href="https://all-hands.dev" target="_blank" rel="noopener noreferrer" class="openhands-link">
+                    OpenHands 🙌
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading your link tree...</p>
+    </div>
+
+    <!-- Click Tracking Modal -->
+    <div id="click-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Opening Link</h3>
+            <p id="click-message">Redirecting you to the link...</p>
+            <div class="modal-buttons">
+                <button id="continue-btn" class="btn btn-primary">Continue</button>
+                <button id="cancel-btn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error-message hidden">
+        <h3>⚠️ Configuration Error</h3>
+        <p>There was an issue loading your configuration. Please check your config.js file.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    
+    <!-- Google Analytics (if configured) -->
+    <script id="google-analytics"></script>
+</body>
+</html>
