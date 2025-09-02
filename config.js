@@ -5,10 +5,10 @@
 const CONFIG = {
   // 👤 YOUR PROFILE INFORMATION
   profile: {
-    name: "Your Name Here",                    // Your display name
-    bio: "Welcome to my link tree! 🌳",       // Short description about you
-    avatar: "https://via.placeholder.com/150", // Your profile picture URL
-    location: "Your City, Country",            // Optional: Your location
+    name: "Sweet Roll Chicago",                    // Your display name
+    bio: "Free Bicycle Bakery Rides",       // Short description about you
+    avatar: "https://pbs.twimg.com/profile_images/1702514407333388288/XhMrcadv_400x400.jpg", // Your profile picture URL
+    location: "Chicago, IL, USA",            // Optional: Your location
   },
 
   // 🎨 APPEARANCE SETTINGS
@@ -35,6 +35,23 @@ const CONFIG = {
   // 🔗 YOUR LINKS
   // Add as many links as you want! Just copy the format below.
   links: [
+    {
+      title: "September Ride",
+      url: "https://partiful.com/e/PKdIu2WO0nIpewNNyB9Y",
+      icon: "🍩",                    // Emoji or leave empty ""
+      featured: true,                // Set to true to highlight this link
+      description: "Sep 13, 2025"  // Optional description
+    },
+    {
+      title: "October Ride",
+      url: "https://partiful.com/e/FC2BnL1UHP0avChwquY8",
+      icon: "🧋",                    // Emoji or leave empty ""
+      featured: true,                // Set to true to highlight this link
+      description: "Oct 11, 2025"  // Optional description
+    },
+
+
+/*
     {
       title: "My Website",
       url: "https://yourwebsite.com",
@@ -91,20 +108,23 @@ const CONFIG = {
       featured: true,
       description: "See my latest work"
     }
+*/
   ],
 
   // 📱 SOCIAL MEDIA LINKS (displayed as icons at the bottom)
   socialMedia: {
-    instagram: "https://instagram.com/yourusername",
-    twitter: "https://twitter.com/yourusername", 
-    linkedin: "https://linkedin.com/in/yourusername",
-    github: "https://github.com/yourusername",
-    youtube: "https://youtube.com/@yourusername",
-    tiktok: "https://tiktok.com/@yourusername",
-    facebook: "https://facebook.com/yourusername",
-    discord: "https://discord.gg/yourinvite",
-    twitch: "https://twitch.tv/yourusername",
-    spotify: "https://open.spotify.com/user/yourusername"
+    //instagram: "https://instagram.com/yourusername",
+    twitter: "https://twitter.com/sweetrollchi", 
+    bluesky: "https://bsky.app/profile/jamiechicago.bsky.social",
+    //linkedin: "https://linkedin.com/in/yourusername",
+    //github: "https://github.com/yourusername",
+    //youtube: "https://youtube.com/@yourusername",
+    //tiktok: "https://tiktok.com/@yourusername",
+    //facebook: "https://facebook.com/yourusername",
+    //discord: "https://discord.gg/yourinvite",
+    //twitch: "https://twitch.tv/yourusername",
+    //spotify: "https://open.spotify.com/user/yourusername",
+    reddit: "https://www.reddit.com/user/soeasypancakes/"
     // Add more social platforms as needed!
     // Just use the format: platformname: "your-url-here"
   },
