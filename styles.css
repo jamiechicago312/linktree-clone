@@ -88,6 +88,14 @@ body {
   transition: opacity var(--transition-speed);
 }
 
+/* Dark mode gradient overlay */
+[data-theme="dark"] #gradient-overlay {
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.15) 0%, 
+    rgba(147, 51, 234, 0.15) 50%, 
+    rgba(236, 72, 153, 0.15) 100%);
+}
+
 #gradient-overlay.active {
   opacity: 1;
 }

@@ -97,6 +97,7 @@ const CONFIG = {
   socialMedia: {
     instagram: "https://instagram.com/yourusername",
     twitter: "https://twitter.com/yourusername", 
+    bluesky: "https://bsky.app/profile/yourusername.bsky.social",
     linkedin: "https://linkedin.com/in/yourusername",
     github: "https://github.com/yourusername",
     youtube: "https://youtube.com/@yourusername",
