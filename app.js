@@ -62,21 +62,10 @@ class LinkTreeApp {
     if (theme.primaryColor) {
       root.style.setProperty('--primary-color', theme.primaryColor);
     }
-    if (theme.backgroundColor) {
-      root.style.setProperty('--background-color', theme.backgroundColor);
-    }
-    if (theme.textColor) {
-      root.style.setProperty('--text-color', theme.textColor);
-    }
-    if (theme.darkBackgroundColor) {
-      root.style.setProperty('--dark-background-color', theme.darkBackgroundColor);
-    }
-    if (theme.darkTextColor) {
-      root.style.setProperty('--dark-text-color', theme.darkTextColor);
-    }
     if (theme.fontFamily) {
       root.style.setProperty('--font-family', theme.fontFamily);
     }
+    // Note: background and text colors are now handled by applyThemeSpecificColors()
   }
 
   injectCustomCSS(css) {
@@ -91,6 +80,32 @@ class LinkTreeApp {
     const themeIcon = document.querySelector('.theme-icon');
     if (themeIcon) {
       themeIcon.textContent = this.theme === 'dark' ? '☀️' : '🌙';
+    }
+    
+    // Apply theme-specific colors from config
+    this.applyThemeSpecificColors();
+  }
+  
+  applyThemeSpecificColors() {
+    const root = document.documentElement;
+    const theme = this.config.theme;
+    
+    if (this.theme === 'dark') {
+      // Apply dark mode colors
+      if (theme.darkBackgroundColor) {
+        root.style.setProperty('--background-color', theme.darkBackgroundColor);
+      }
+      if (theme.darkTextColor) {
+        root.style.setProperty('--text-color', theme.darkTextColor);
+      }
+    } else {
+      // Apply light mode colors
+      if (theme.backgroundColor) {
+        root.style.setProperty('--background-color', theme.backgroundColor);
+      }
+      if (theme.textColor) {
+        root.style.setProperty('--text-color', theme.textColor);
+      }
     }
   }
 
