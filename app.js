@@ -197,7 +197,6 @@ class LinkTreeApp {
     const socialIcons = {
       instagram: '📸',
       twitter: '🐦',
-      bluesky: '🦋',
       linkedin: '💼',
       github: '💻',
       youtube: '📺',
